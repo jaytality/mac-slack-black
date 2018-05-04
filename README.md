@@ -10,7 +10,7 @@ This is mostly macOS specific - but:
 
 * in Finder, browse to your Applications Directory (shift + command + a from any Finder window or the Desktop)
 * right-click on the **Slack** application, and Browse Package Contents
-* hit this up and edit it: `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
+* hit this up and edit it: `Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
 * at the bottom of the file add:
 
 ```
@@ -34,5 +34,5 @@ If for some reason, you desire to burn the power of a thousand suns into your ey
 
 * in Finder, browse to your Applications Directory (shift + command + a from any Finder window or the Desktop)
 * right-click on the **Slack** application, and Browse Package Contents
-* hit this up and edit it: `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
+* hit this up and edit it: `Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
 * **remove** the code snippet from above in the Installation section
