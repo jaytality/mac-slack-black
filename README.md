@@ -10,16 +10,21 @@ This is mostly macOS specific - but:
 
 * in Finder, browse to your Applications Directory (shift + command + a from any Finder window or the Desktop)
 * right-click on the **Slack** application, and Browse Package Contents
-* hit this up `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
+* hit this up and edit it: `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
+* at the bottom of the file add:
 
 ```
 document.addEventListener('DOMContentLoaded', function() {
     $.ajax({
-      url: 'https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css',
+      url: 'https://git.jtiong.com/jaytwitch/slack-black-theme/raw/master/black.css',
              success: function(css) {
          $("<style></style>").appendTo('head').html(css);
        }
      });
 });
 ```
+
+And now you should have a darker window!
+
+* season to taste with the sidebar, or editing the black.css file from your repo clone/fork
 
