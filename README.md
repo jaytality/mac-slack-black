@@ -28,3 +28,11 @@ And now you should have a darker window!
 
 * season to taste with the sidebar, or editing the black.css file from your repo clone/fork
 
+## Uninstallation
+
+If for some reason, you desire to burn the power of a thousand suns into your eyeballs late at night once more, to see into infinity -- you can uninstall by:
+
+* in Finder, browse to your Applications Directory (shift + command + a from any Finder window or the Desktop)
+* right-click on the **Slack** application, and Browse Package Contents
+* hit this up and edit it: `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
+* **remove* the code snippet from above in the Installation section
